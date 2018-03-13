@@ -6,14 +6,13 @@ RUN apt-get update \
 # git clone project and config path
     && cd ~ \
     && git clone https://github.com/andikleen/pmu-tools.git \
-    && git clone https://github.com/andabi/deep-voice-conversion.git \
+    && git clone https://github.com/davidsandberg/facenet.git \
     && echo "export PATH=~/pmu-tools:$PATH" >> ~/.bashrc \
 # download dependencies: tqdm, python2.7, Python 3.n, tensorflow, librosa
-    && pip install -e git+https://github.com/tqdm/tqdm.git@master#egg=tqdm
     && apt-get install python-pip python-dev
     && apt-get install python3-pip python3-dev
     && pip install tensorflow
-    && pip install librosa
+    && pip install opencv
 # train the model 
     && python ./deep-voice-conversion/train1.py default
     && python ./deep-voice-conversion/eval1.py default
