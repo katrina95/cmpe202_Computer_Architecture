@@ -7,14 +7,16 @@ RUN apt-get update \
     && cd ~ \
     && git clone https://github.com/andikleen/pmu-tools.git \
     && git clone https://github.com/davidsandberg/facenet.git \
+    && git clone https://github.com/davidsandberg/facenet.git \
     && echo "export PATH=~/pmu-tools:$PATH" >> ~/.bashrc \
 # download dependencies: tqdm, python2.7, Python 3.n, tensorflow, librosa
-    && apt-get install python-pip python-dev
-    && apt-get install python3-pip python3-dev
-    && pip install tensorflow
-    && pip install opencv
-# train the model 
-    && python ./deep-voice-conversion/train1.py default
-    && python ./deep-voice-conversion/eval1.py default
-    && python ./deep-voice-conversion/convert.py default
+    && apt-get install python-pip python-dev \
+    && apt-get install python3-pip python3-dev \
+    && pip install tensorflow \
+    && pip install -r ./facenet/requirements.txt \
+# get the dataset and pre-trained model
+    &&cat modelaa modelab modelac modelad modelae modelaf modelag modelah > 20170512-110547.zip model
+    &&cat modelaa lfwaa lfwab lfwac lfwad lfwae lfwaf lfwag lfwah > lfw.tgz
     
+    
+docker build -t ubuntu:wenting
