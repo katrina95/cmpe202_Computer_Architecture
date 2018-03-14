@@ -34,7 +34,4 @@ RUN apt-get update \
     && apt-get install unzip \
     && unzip ~/cmpe202_Computer_Architecture/20170512-110547 -d ~/models
     && cd ~/facenet \
-    && python ~/facenet/src/validate_on_lfw.py ~/datasets/lfw/lfw_mtcnnpy_160 ~/models/20170512-110547 \
-    
-    
-docker build -t ubuntu:wenting
+    && python ~/facenet/src/validate_on_lfw.py ~/datasets/lfw/lfw_mtcnnpy_160 ~/models/20170512-110547 
