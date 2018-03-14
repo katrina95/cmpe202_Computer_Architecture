@@ -1,1 +1,1 @@
-docker build -t v2 ~/
+docker build -t v2
