@@ -32,6 +32,6 @@ RUN apt-get update \
     && mkdir ~/models \
     && cd ~ \
     && apt-get install unzip \
-    && unzip ~/cmpe202_Computer_Architecture/20170512-110547 -d ~/models
+    && unzip ~/cmpe202_Computer_Architecture/20170512-110547 -d ~/models \
     && cd ~/facenet \
-    && python ~/facenet/src/validate_on_lfw.py ~/datasets/lfw/lfw_mtcnnpy_160 ~/models/20170512-110547 
+    && python ~/facenet/src/validate_on_lfw.py ~/datasets/lfw/lfw_mtcnnpy_160 ~/models/20170512-110547
