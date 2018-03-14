@@ -13,7 +13,7 @@ RUN apt-get update \
     && apt-get install -y python-pip python-dev \
     && apt-get install -y python3-pip python3-dev \
     && pip install -y tensorflow \
-    && pip install -y -r ./facenet/requirements.txt \
+    && pip install -r ./facenet/requirements.txt \
 # get the dataset and pre-trained model
     && cd ~/cmpe202_Computer_Architecture \
     && cat model* > 20170512-110547 \
