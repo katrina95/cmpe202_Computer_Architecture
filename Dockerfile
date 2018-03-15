@@ -32,4 +32,3 @@ RUN apt-get update \
     && cd ~ \
     && apt-get install -y unzip \
     && unzip ~/cmpe202_Computer_Architecture/20170512-110547 -d ~/models \
-    && cd ~/facenet
