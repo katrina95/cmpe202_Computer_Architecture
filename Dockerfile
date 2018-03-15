@@ -6,7 +6,7 @@ RUN apt-get update \
 # git clone project and config path
     && cd ~ \
     && git clone https://github.com/andikleen/pmu-tools.git \
-    && git clone https://github.com/davidsandberg/facenet.git \
+    && git clone https://github.com/katrina95/facenet.git \
     && git clone https://github.com/katrina95/cmpe202_Computer_Architecture.git \
     && echo "export PATH=~/pmu-tools:$PATH" >> ~/.bashrc \
 # download dependencies: tqdm, python2.7, Python 3.n, tensorflow, librosa
