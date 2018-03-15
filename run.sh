@@ -24,7 +24,7 @@ for ((i=1;i<=$instructions;i++))
 do
 read -u3
 {
-~/facenet/src/validate_on_lfw.py ~/datasets/lfw/lfw_mtcnnpy_160 ~/models/20170512-110547
+python ~/facenet/src/validate_on_lfw.py ~/datasets/lfw/lfw_mtcnnpy_160 ~/models/20170512-110547
 echo >&3 
 }&
 done
