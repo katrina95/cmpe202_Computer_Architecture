@@ -1,0 +1,7 @@
+# 3.31-full on Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+0.000447559,C0,Frontend_Bound,36.72,% Slots,This category represents slots fraction where the processor's Frontend undersupplies its Backend...,,,100.0,
+0.000447559,C0,Backend_Bound,49.90,% Slots,,,,100.0,
+0.000447559,C0,Backend_Bound.Core_Bound,49.90,% Slots,This metric represents slots fraction where Core non-memory issues were of a bottleneck...,,,0.0,<==
+0.000447559,C1,Frontend_Bound,23.15,% Slots,,,,100.0,
+0.000447559,C1,Backend_Bound,51.90,% Slots,,,,100.0,
+0.000447559,C1,Backend_Bound.Core_Bound,51.90,% Slots,,,,0.0,<==

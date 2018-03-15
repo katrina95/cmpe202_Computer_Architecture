@@ -1,6 +1,6 @@
 #!/bin/bash
 echo '0' > /proc/sys/kernel/nmi_watchdog
-instructions=8
+instructions=1
 thread=1
 while getopts "i:t:" arg
 do
