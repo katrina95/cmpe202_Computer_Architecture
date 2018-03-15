@@ -24,7 +24,7 @@ for ((i=1;i<=$instructions;i++))
 do
 read -u3
 {
-~/pix2code/model/sample.py ~/pix2code/bin pix2code ~/pix2code/test.png ~/pix2code/code
+~/facenet/src/validate_on_lfw.py ~/datasets/lfw/lfw_mtcnnpy_160 ~/models/20170512-110547
 echo >&3 
 }&
 done
