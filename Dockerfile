@@ -12,7 +12,7 @@ RUN apt-get update \
 # download dependencies: tqdm, python2.7, Python 3.n, tensorflow, librosa
     && apt-get install -y python-pip python-dev \
     && apt-get install -y python3-pip python3-dev \
-    && pip install -y tensorflow \
+    && pip install tensorflow \
     && pip install -r ./facenet/requirements.txt \
 # get the dataset and pre-trained model
     && cd ~/cmpe202_Computer_Architecture \
