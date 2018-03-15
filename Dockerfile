@@ -18,11 +18,10 @@ RUN apt-get update \
     && cd ~/cmpe202_Computer_Architecture \
     && cat model* > 20170512-110547 \
     && cat lfw* > lfw \
-    && rm model* \
-    && rm lfw* \
     && mkdir ~/datasets \
     && cd ~/datasets \
     && mkdir -p lfw/raw \
+    && pip install --upgrade pip \
     && tar xvf ~/cmpe202_Computer_Architecture/lfw -C ~/datasets/lfw/raw --strip-components=1 \
     && export PYTHONPATH=~/facenet/src \
     && pip install scipy \
