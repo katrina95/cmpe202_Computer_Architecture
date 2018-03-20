@@ -1,6 +1,6 @@
-#!/bin/bash
+
 instructions=1
-thread=1
+thread=2
 while getopts "i:t:" arg
 do
 case $arg in
